@@ -1,0 +1,15 @@
+.navbar {
+  height: 90px;
+}
+
+.bg-light{
+  background-color: white !important;
+}
+
+.nav-link{
+  padding-left: 1.5rem !important ;
+}
+
+.logo{
+  height: 4.5rem;
+}
