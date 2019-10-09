@@ -1,3 +1,11 @@
+body{
+	background-image: url('./images/1.png');
+	background-repeat: no-repeat;/* Para que la imagen de fondo no se repita */
+	background-attachment: fixed;/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+	background-size: cover;/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-position: center center;/* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+}
+
 .navbar {
   height: 90px;
   z-index:10;
@@ -15,14 +23,41 @@
   height: 4.5rem;
 }
 
-.carousel .carousel-item {
-  height: 90vh;
+.scrolling-box{
+  height: 80vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-.carousel-item img {
+#home {
+  height: 90vh;
+  border: 1px solid blue;
+}
+
+#quienes-somos{
+  background-color: var(--white);
+}
+
+#quienes-somos p:before{
+  content: '';
   position: absolute;
+  left: 10;
   top: 0;
-  left: 0;
-  max-width:100%;
-  max-height:100%;
+  background-color: rgb(65, 153, 61);
+  width: 122px;
+  height: 3px;
+}
+
+
+.img-quienes{
+  border-radius: 4%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 400ms;
+}
+
+.img-quienes:hover{
+  /* box-shadow: 10px 5px 25px black; */
+  box-shadow: 10px 5px 25px rgb(65, 153, 61);
 }
