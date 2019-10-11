@@ -1,5 +1,5 @@
 body{
-	background-image: url('./images/1.png');
+	background-image: url('./images/05.jpg');
 	background-repeat: no-repeat;/* Para que la imagen de fondo no se repita */
 	background-attachment: fixed;/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
 	background-size: cover;/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
@@ -24,32 +24,33 @@ body{
 }
 
 .scrolling-box{
-  height: 80vh;
+  height: 87vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
 #home {
   height: 90vh;
-  border: 1px solid blue;
 }
 
 #quienes-somos{
   background-color: var(--white);
 }
 
-#quienes-somos p:before{
+#experiencia{
+  background-color: rgb(65, 153, 61);
+}
+
+.intro:before{
   content: '';
   position: absolute;
-  left: 10;
-  top: 0;
+  left: 10px;
   background-color: rgb(65, 153, 61);
   width: 122px;
   height: 3px;
 }
 
-
-.img-quienes{
+.img-quienes, .img-experiencia{
   border-radius: 4%;
   width: 100%;
   margin-top: 20px;
@@ -58,6 +59,31 @@ body{
 }
 
 .img-quienes:hover{
-  /* box-shadow: 10px 5px 25px black; */
   box-shadow: 10px 5px 25px rgb(65, 153, 61);
+}
+
+.experiencia:before{
+  content: '';
+  position: absolute;
+  left: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 122px;
+  height: 3px;
+}
+
+.img-experiencia:hover{
+  box-shadow: 10px 5px 25px rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.colorTitle{
+  color: var(--white);
+}
+
+.invalid-field{
+  color: var(--red);
+  font-size: 0.8rem;
 }

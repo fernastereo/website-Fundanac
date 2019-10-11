@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fundanac - Fundación para el Desarrollo de la Región Norte Colombiana</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="./js/mail.js"></script>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 <body>
   <hader class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,50 +42,145 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experiencia</a>
+            <a class="nav-link" href="#experiencia">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>    
   </hader>
   <div class="scrolling-box">
-    <main id="home">
-      <div class="container">
+    <!-- SECCION PRINCIPAL - PORTADA -->
+    <main id="home" class="d-flex align-items-end">
+      <div class="container-fluid">
         <div class="row">
+          <div class="col-12 col-md-5 offset-md-7 text-success text-md-right mb-5">
+            <h1 class="display-5">Fundenac</h1>
+            <h2 id="role">Fundación para el Desarrollo de la Región Norte Colombiana</h2>
+            <a id="main__button" class="btn btn-outline-success" href="#quienes-somos" role="button">Ver mas...</a>
+          </div>
         </div>
       </div>
     </main>
+    <!-- SECCION QUIENES SOMOS -->
     <section id="quienes-somos">
       <div class="container">
 				<div class="row">
 					<div class="col-12 text-center text-uppercase mt-5 mt-md-3 mb-3">
-						<small id="profile__subtitle">FUNDACION PARA EL DESARROLLO DE LA REGION NORTE COLOMBIANA</small>
-						<h2 id="profile__title">Quienes somos</h2>
+						<small id="quienes__subtitle">FUNDACION PARA EL DESARROLLO DE LA REGION NORTE COLOMBIANA</small>
+						<h2 id="quienes__title">Quienes somos</h2>
 						<hr/>
 					</div>
 				</div>
         <div class="row pb-4">
-            <div class="col-12 col-md-6 text-center">
-              <p class="text-justify pt-3">
-                  <strong>LA FUNDACION FUNDANAC</strong> es una organización sin ánimo de lucro, adscrita al Sistema Nacional de Bienestar Familiar (SNBF) de acuerdo al Decreto 1137 de 1999, y podrá desarrollar su objeto social a través de los siguientes propósitos:
-              </p>
+            <div class="col-12 col-md-6 text-center mt-3">
+              <div class="intro">
+                <p class="text-justify pt-3">
+                    <strong>LA FUNDACION FUNDANAC</strong> es una organización sin ánimo de lucro, adscrita al Sistema Nacional de Bienestar Familiar (SNBF) de acuerdo al Decreto 1137 de 1999, y podrá desarrollar su objeto social a través de los siguientes propósitos:
+                </p>
+              </div>
               <ol>
                 <li class="text-justify">Brindar atención integral a programas y proyectos dirigidos a menores de edad y otros grupos como menores embarazadas.</li>
                 <li class="text-justify">Elaborar programas de mejoramiento y asistencia nutricional, salud física y oral de la población infantil, juvenil, adulta y la tercera edad, a través de toda la red de seguridad alimentaria</li>
-              </ol>
-              <div class="mt-4">
-                <a href="" class="btn btn-outline-success">Ver más...</a>
+              </ol> 
+              <div class="intro">
+                  <a href="" class="btn btn-outline-success mt-5">Ver más...</a>
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <img class="img-quienes" src="./images/1.png" alt="">
+              <img class="img-quienes" src="./images/03.jpg" alt="">
             </div>    
         </div>
       </div>
     </section>
+    <!-- SECCION EXPERIENCIA -->
+    <section id="experiencia">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-uppercase mt-5 mt-md-3 mb-3">
+            <small id="experiencia__subtitle">nuestra</small>
+            <h2 id="experiencia__title">Experiencia</h2>
+            <hr/>
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div class="col-12 col-md-6">
+            <img class="img-experiencia" src="./images/02.jpg" alt="">
+          </div>    
+          <div class="col-12 col-md-6 text-center mt-3">
+            <div class="experiencia">
+              <p class="text-justify pt-3">
+                  Desde su creación la <strong>Fundación para el Desarrollo de la Región Norte Colombiana</strong> ha ejecutado contratos con el Instituto Colombiano de Bienestar Familiar <strong>(ICBF)</strong>, instituciones del orden oficial y privadas como también con diferentes municipios de la costa atlántica, atendiendo a la población menor de 5 años en Programas de Recuperación Nutricional, a menores de 18 años con el suministro de desayunos y almuerzos en el Programa de Atención al Escolar y Adolescente (PAE) en sedes educativas oficiales y a la población Adulto Mayor.
+              </p>
+            </div>
+            <table class="table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Año</th>
+                  <th scope="col">Entidad</th>
+                  <th scope="col">Valor</th>
+                  <th scope="col">Objeto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><small>2018</small></th>
+                  <td><small>M/PIO TAMALAMEQUE-PAE</small></td>
+                  <td><small>219.72</small></td>
+                  <td><small>SUMINISTRO ALIMENTACIÓN ESCOLAR-PAE</small></td>
+                </tr>
+                <tr>
+                  <th scope="row"><small>2017</small></th>
+                  <td><small>M/PIO SAN MARTIN-PAE</small></td>
+                  <td><small>872.72</small></td>
+                  <td><small>SUMINISTRO ALIMENTACION ESCOLAR-PAE</small></td>
+                </tr>
+                <tr>
+                  <th scope="row"><small>2017</small></th>
+                  <td><small>M/PIO TAMALAMEQUE-PAE</small></td>
+                  <td><small>281.45</small></td>
+                  <td><small>SUMINISTRO ALIMENTACION ESCOLAR-PAE</small></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="experiencia">
+              <a href="" class="btn btn-outline-light mt-2">Ver más...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+		<!-- Footer -->
+		<footer id="contacto">
+      <div class="container colorTitle">
+        <div class="row">
+          <div class="col-12 col-md-7 mt-5">
+            <h3>Fundanac</h3>
+            <h5>Fundación para el Desarrollo de la Región Norte Colombiana</h5>
+            <p><a class="email" href="mailto:hrb_0109@hotmail.com">hrb_0109@hotmail.com</a></p>
+          </div>
+          <div class="col-12 col-md-4 mt-5 offset-md-1">
+            <address>
+              Carrera 13 No 13B - 30 <br>
+              Valledupar - Colombia <br>
+              Teléfonos:<br> <a href="tel:+57-5-5870262">+57-5-5870262</a> <br>
+              <a href="tel:+57-3103672630">+57-3103672630</a> <br>
+              <a href="tel:+57-3104965619">+57-3104965619</a> <br>
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4 mb-4 text-center">
+            <small><span>Handcrafted by <a href="http://www.fernandocueto.com">Fernando Cueto</a>. Copyright © 2019</span></small>
+            <small><div>Pictures taken from <a href="https://www.pexels.com" title="Pexels">Pexels</a> under the Creative Commons Zero (CC0) license</div></small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
