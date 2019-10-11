@@ -33,6 +33,19 @@ body{
   height: 90vh;
 }
 
+@font-face {
+  font-family:"Balloon";
+  src:url("BL______.eot?") format("eot"),url("BL______.woff") format("woff"),url("BL______.ttf") format("truetype"),url("BL______.svg#Balloon") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+.shadowed {
+  text-shadow: -3px 1px 2px rgb(70, 69, 69);
+  font-family: "Balloon";
+  color: rgb(65, 153, 61);
+}
+
 #quienes-somos{
   background-color: var(--white);
 }
