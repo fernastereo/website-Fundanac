@@ -63,7 +63,15 @@ body{
   height: 3px;
 }
 
-.img-quienes, .img-experiencia{
+.img-quienes{
+  border-radius: 4%;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 400ms;
+}
+
+.img-experiencia{
   border-radius: 4%;
   width: 100%;
   margin-top: 20px;
